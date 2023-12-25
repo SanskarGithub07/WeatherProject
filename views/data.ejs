@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Page</title>
+    <style>
+        body {
+            background-color: #776B5D;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        div {
+            background-color: #B0A695;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1{
+            color: #F3EEEA;
+        }
+        p{
+            color: #F3EEEA;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>The temperature in <%= query %> is: <%= temp %> degrees celcius</h1>
+        <p>The weather is currently <%= description %></p>
+        <img src=<%= imageUrl %> />
+    </div>
+</body>
+</html>
